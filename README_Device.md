@@ -1,7 +1,7 @@
 The main branch as of 2/13/2022 fulfills phase 0 of project.
 The Device branch as of 2/13/2022 fulfills phase 1 of project.
 
-In this branch there are 3 files:
+In this branch there is one python file:
 
 entering_in_shell.py - when running this file, users will be able to enter in their user information, device information and measurements through the command line creating a shell for the device interface.
 
