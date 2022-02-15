@@ -21,3 +21,15 @@ Measurement list will contain measurements of all measurements.
 
 EDIT - I am going to tweak the device module. entering_in_shell.py remains for now. device_interface.py takes in a json file for a device, the json file contains device measurement data for all patients the device has used, tests for all the valid fields, and if it is correct, it outputs a text file.
 
+JSON File Example:
+"users":[
+  {
+    userID:
+    measurement:
+  }
+  {
+    userID:
+    measurement:
+  }
+]
+
