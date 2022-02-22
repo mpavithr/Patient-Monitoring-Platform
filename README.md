@@ -39,12 +39,7 @@ Patients can:
 For the users to be able to do the things they need to do, there will be several modules which are Device Module, Calendar Module, Alerts module, Chat Module, Voice transcriber, Administrative module, Data Management Module, API Module
 
 Device Module: 
-Contains Device Table, Measurement Table, User Table
-Who can access the tables? Patient can enter measurements and devices to the device and measurement and user table.
-Medical Professionals can view the entire measurement, device and user table as well as enter information to it.
-
-Device table describes type of device, what it measures and in which units and other details about the device. 
-Measurement table contains measurements and has a column for device id and User ID linking the device and user tables with the measurement table.
+Interface for devices to interact with the system.
 
 **Branching Strategy**
 
