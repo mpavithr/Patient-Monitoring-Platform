@@ -1,35 +1,46 @@
 The main branch as of 2/13/2022 fulfills phase 0 of project.
 The Device branch as of 2/13/2022 fulfills phase 1 of project.
 
-In this branch there is one python file:
+This branch is for the device module. The device module is an interface where devices can interact with the system.
 
-entering_in_shell.py - when running this file, users will be able to enter in their user information, device information and measurements through the command line creating a shell for the device interface.
+phase1.py - this code takes in a json file. Checks whether it is a valid json file. This json file contains information about devices and each device has the following fields: 
+1. Device_id - unique id of a device, every device has one
+2. patientName - name of the patient whose measurement is being taken
+3. date - date the patient took the measurement with the device in "MM/DD/YYYY" format
+4. time - time the patient took the measurement with the device in "HH:MM" format
+5. machineID - each device corresponds to a machine, the machine ids are listed as follows (1:Thermometer, 2:BP Monitor, 3:Oximeter, 4:Weight, 5:Glucometer, 6:Stadiometer) 
+6. measurement - the actual measurement recorded by the device
 
-The file will then use the information recieved through the command line and put the information into tables according to the schemata in main branch (Project 2.xlsx) thus creating a device interface.
+In this file, I have hardcoded all the device IDs for device authentication. If a device_id value of a device in the json file is not present in the hardcoded values, the device is invalid and will not be expected and the program will ask the third party user to try again. 
 
-When running the file, it creates an example simulation.
+this code file checks for errors in the data fields of the device whether it is given in the correct format. If everything looks correct. Each device prints its information into a text file. 
 
-So there will be an entry in a user table, device table, and measurement table every time the file is run.
+Unit Tests include:
+Unit Test 1: Checking whether the input file can be opened.
+Unit Test 2: Checking whether the input file is in json format.
 
-Tables will be for now python dictionaries for each user, each device and each measurement.
-
-Unit Testing involves creating unit tests for whether the information provided by a user is valid for the field and whether empty fields are empty in the table/dict.
-
-User list will contain dictionaries of all users.
-Device list will contain dictionaries of all devices.
-Measurement list will contain measurements of all measurements.
-
-EDIT - I am going to tweak the device module. entering_in_shell.py remains for now. device_interface.py takes in a json file for a device, the json file contains device measurement data for all patients the device has used, tests for all the valid fields, and if it is correct, it outputs a text file.
+This fulfils phase 1 of the project.
 
 JSON File Example:
-"users":[
-  {
-    userID:
-    measurement:
-  }
-  {
-    userID:
-    measurement:
-  }
-]
+{
+    "devices":[
+        {
+            "device_id": 2,
+            "patientName": "John Smith",
+            "date": "01/10/2022",
+            "time": "07:53",
+            "machineID": 2,
+            "measurement": 120.00
+        },
+        {
+            "device_id": 4,
+            "patientName": "Jane Doe",
+            "date": "02/14/2022",
+            "time": "20:56",
+            "machineID": 6,
+            "measurement": 66.00
+        }
+    ]
+}
 
+entering_in_shell.py - when running this file, users will be able to enter in their user information, device information and measurements through the command line creating a shell for the device interface.
