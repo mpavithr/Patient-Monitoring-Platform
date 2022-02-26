@@ -9,5 +9,6 @@ class TestPhase1(unittest.TestCase):
         result = phase1.checkingEmptyFile("devices.json")
         self.assertEqual(result,1)
 
+        
 if __name__ == '__main__':
     unittest.main()
