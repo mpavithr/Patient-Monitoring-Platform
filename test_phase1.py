@@ -1,5 +1,5 @@
 import unittest
-import test
+import phase1
 
 class TestPhase1(unittest.TestCase):
     def test_checkingForJSON(self):
