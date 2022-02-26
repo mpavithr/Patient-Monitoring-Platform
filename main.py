@@ -1,8 +1,8 @@
-from flask import Flask, request #request object can be used inside resource
+from flask import Flask # request object can be used inside resource
 from flask_restful import Api, Resource, reqparse, abort
 
 app = Flask(__name__)
-api = Api(app) #wrap our app in an Api
+api = Api(app) # wrap our app in an Api
 
 device_put_args = reqparse.RequestParser()
 device_put_args.add_argument("idDevice", type=int, help="The unique Device ID of device used is required", required=True)
@@ -65,8 +65,10 @@ class Device(Resource):
         del devices[device_id]
         return '', 204
 
-api.add_resource(Device, "/device/<int:device_id>")
+    
+    api.add_resource(Device, "/device/<int:device_id>")
 
+    
 if __name__ == "__main__":
     app.run(debug=True)
     #start our server, start our Flask application
