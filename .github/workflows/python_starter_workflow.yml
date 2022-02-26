@@ -7,7 +7,7 @@ on:
   push:
     branches: [main, device]
   pull_request: 
-    branches: [main, device]
+    branches: [main]
 
 jobs:
   build:
@@ -46,5 +46,6 @@ jobs:
       - name: Test with pytest
         run: |
          # change the working directory to where pytest is located
+           cd /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform
          # indicate where pytest is located
-           pytest test_phase1.py
+           pytest /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/test_phase1.py
