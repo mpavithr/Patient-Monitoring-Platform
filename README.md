@@ -44,14 +44,3 @@ For the users to be able to do the things they need to do, there will be several
 
 Device Module: 
 Interface for devices to interact with the system.
-
-**Branching Strategy**
-
-This project follows feature branching for continuous delivery and continuous integration. Each module to be developed in this project is considered a feature.
-
-The following are the branches:
-1. Main Branch - Everything in this branch is ready for production. Anyone can use the code and files contained in this branch.
-2. Device Branch - This branch is for the code and files needed for the device module. Once developed, tested and pulled and reviewed, it's merged into the main branch.
-Similarly, there will be branches for Calendar, alert, Chat, Voice and API modules which will all be merged back to the main branch once tested and developed.
-
-
