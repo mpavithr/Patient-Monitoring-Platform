@@ -1,7 +1,3 @@
-import string
-import numpy as np
-import os
-
 def shell(user, device, measurement):
   #Creates an interface for users to add in their data
   firstName = input("Enter your first name: ")
@@ -65,5 +61,6 @@ def main():
     listofdevices.append(device)
     listofmeasurements.append(measurement)
 
+    
 if __name__=="__main__":
     main()
