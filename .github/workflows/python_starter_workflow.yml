@@ -47,5 +47,6 @@ jobs:
       - name: Test with pytest
         run: |
          # change the working directory to where pytest is located
+           os.getcwd()
          # indicate where pytest is located
            pytest test_phase1.py
