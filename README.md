@@ -2,6 +2,10 @@
 
 The following readme contains information about this project and the branching strategy.
 
+**Branching Strategy** - https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Branching-Strategy
+
+**Description of the project**
+
 This project is a platform to monitor patients at home or in the hospital.
 
 There are 4 categories of users that will use this platform:
@@ -39,6 +43,7 @@ Patients can:
 For the users to be able to do the things they need to do, there will be several modules which are Device Module, Calendar Module, Alerts module, Chat Module, Voice transcriber, Administrative module, Data Management Module, API Module
 
 Device Module: 
+<<<<<<< HEAD
 Can take in information about measurements that a device has measured for each user.
 (Previous understanding - Contains Device Table, Measurement Table, User Table
 Who can access the tables? Patient can enter measurements and devices to the device and measurement and user table.
@@ -57,3 +62,6 @@ The following are the branches:
 Similarly, there will be branches for Calendar, alert, Chat, Voice and API modules which will all be merged back to the main branch once tested and developed.
 
 
+=======
+Interface for devices to interact with the system.
+>>>>>>> origin/main
