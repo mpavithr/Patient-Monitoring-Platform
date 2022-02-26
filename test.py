@@ -65,6 +65,7 @@ def checkingEmptyFile(file):
         emptyFlag=1
     return emptyFlag
 
+
 if __name__ == "__main__":
     BASE = "http://127.0.0.1:5000/"
     file = str(input("Enter device file in json format:"))
