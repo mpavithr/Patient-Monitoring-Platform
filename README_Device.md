@@ -1,10 +1,22 @@
 The main branch as of 2/13/2022 fulfills phase 0 of project.
 The Device branch as of 2/13/2022 fulfills phase 1 of project.
+The Device branch as of 2/22/2022 fulfills phase 2 of project.
 
-This branch is for the device module. The device module is an interface where devices can interact with the system.
+**This branch is for the device module. The device module is an interface where devices can interact with the system.**
 
-phase1.py - this code takes in a json file. Checks whether it is a valid json file. This json file contains information about devices and each device has the following fields: 
-1. Device_id - unique id of a device, every device has one
+deviceRESTAPI.py - this code integrates the device module into a RESTFUL system. Implements PUT, POST, GET, DELETE commands where the user using the module can insert measurements of a patient into a database (for now, this database is a dictionary), update measurements, get measurements and delete measurements.
+
+Each entry in the device module has the following fields:
+1. Device_id - unique id of a device, every device has one, for authentication purposes
+2. patientName - name of the patient whose measurement is being taken
+3. date - date the patient took the measurement with the device in "MM/DD/YYYY" format
+4. time - time the patient took the measurement with the device in "HH:MM" format
+5. machineID - each device corresponds to a machine, the machine ids are listed as follows (1:Thermometer, 2:BP Monitor, 3:Oximeter, 4:Weight, 5:Glucometer, 6:Stadiometer) 
+6. measurement - the actual measurement recorded by the device
+
+deviceAPIwebAppTest1.py - this code takes in a json file. Checks whether it is a valid json file. This json file contains information about devices and each device has the following fields corresponding to the entries in the device module: 
+
+1. Device_id - unique id of a device, every device has one, for authentication purposes
 2. patientName - name of the patient whose measurement is being taken
 3. date - date the patient took the measurement with the device in "MM/DD/YYYY" format
 4. time - time the patient took the measurement with the device in "HH:MM" format
@@ -42,5 +54,3 @@ JSON File Example:
         }
     ]
 }
-
-entering_in_shell.py - when running this file, users will be able to enter in their user information, device information and measurements through the command line creating a shell for the device interface.
