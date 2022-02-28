@@ -1,7 +1,7 @@
 {
     "devices":[
         {
-            "device_id": 2,
+            "idDevice": 2,
             "patientName": "John Smith",
             "date": "01/10/2022",
             "time": "07:53",
@@ -9,7 +9,7 @@
             "measurement": 120.00
         },
         {
-            "device_id": 4,
+            "idDevice": 4,
             "patientName": "Jane Doe",
             "date": "02/14/2022",
             "time": "20:56",

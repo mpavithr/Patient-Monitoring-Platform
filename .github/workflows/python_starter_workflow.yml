@@ -51,4 +51,4 @@ jobs:
          # change the working directory to where pytest is located
            cd /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform
          # indicate where pytest is located
-           pytest /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/test_phase1.py
+           pytest /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/test_deviceRESTAPI.py
