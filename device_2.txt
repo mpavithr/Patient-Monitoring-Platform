@@ -1,1 +1,0 @@
-{'idDevice': 2, 'patientName': 'John Smith', 'date': '01/10/2022', 'time': '07:53', 'machineID': 2, 'measurement': 120.0}
