@@ -28,7 +28,7 @@ The device module is explained [here](https://github.com/mpavithr/Patient-Monito
 
 ## Chat Module Explanation 
 
-The chat module is explained [here](https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Device-Module)
+The chat module is explained [here](https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Chat-Module)
 
 ## Overall Description of the project 
 
