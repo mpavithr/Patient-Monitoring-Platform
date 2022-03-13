@@ -22,7 +22,7 @@ When working on the patient monitoring platform, an issue will be opened with th
 
 https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Branching-Strategy
 
-### Device Module Explanation
+## Device Module Explanation
 
 https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Device-Module
 
