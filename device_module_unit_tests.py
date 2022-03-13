@@ -1,4 +1,4 @@
-import requests
+#import requests
 import json
 
 def checkingForJSON(file):
@@ -146,6 +146,7 @@ def correct_value_for_measurement_json(measurement_list):
             correct_values=0
             break
     return correct_values
+
 
 if __name__ == "__main__":
     BASE = "http://127.0.0.1:5000/"
