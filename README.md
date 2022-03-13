@@ -14,11 +14,11 @@ Make sure to install the requirements:
 python -m pip install requirements
 ```
 
-### Development
+## Development
 
 When working on the patient monitoring platform, an issue will be opened with the desciption of the task being done. Work will be done in sprints in a different branch with respect to main (Branching strategy is furthur explained in wiki). Sprint tasks have to pass unit testing by sprint deadline. Once thoroughly tested, code goes into main branch which means it is ready for release. Sprint tasks not completed by the sprint deadline are moved to the next sprint. 
 
-### Branching Strategy
+## Branching Strategy
 
 https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Branching-Strategy
 
@@ -26,11 +26,11 @@ https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Branching-Strategy
 
 https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Device-Module
 
-### Chat Module Explanation 
+## Chat Module Explanation 
 
 https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Device-Module
 
-### Overall Description of the project 
+## Overall Description of the project 
 
 https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Description
 
