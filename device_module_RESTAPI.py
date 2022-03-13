@@ -36,6 +36,7 @@ class PatientDataModel(db.Model):
 
 #db.create_all()
 
+
 device_put_args = reqparse.RequestParser()
 device_put_args.add_argument("name", type=str, help="Name of the device is required", required=True)
 device_put_args.add_argument("firmware_version", type=float, help="firmware version is required", required=True)
@@ -191,6 +192,7 @@ class Measurement(Resource):
         db.session.commit()
         return '', 204
 
+    
 api.add_resource(Device, "/device/<int:deviceID>")
 api.add_resource(Measurement, "/measurement/<int:measurementID>")
 
