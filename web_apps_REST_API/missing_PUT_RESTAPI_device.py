@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def checkingForJSON(file):
     jsonFlag = 0
     if not file.endswith('.json'):
@@ -9,6 +10,7 @@ def checkingForJSON(file):
         jsonFlag=1
     return jsonFlag
 
+
 def checkingEmptyEntryforFile(file):
     emptyFlag = 0
     if not file:
@@ -16,6 +18,7 @@ def checkingEmptyEntryforFile(file):
     else:
         emptyFlag=1
     return emptyFlag
+
 
 def checkingEmptyFile(file):
     with open(file, 'r') as read_obj:
@@ -26,8 +29,10 @@ def checkingEmptyFile(file):
            return True
     return False
 
+
 def getList(dict):
     return list(dict.keys())
+
 
 def correct_keys_for_device_json(device_list):
     correct_keys = 1
@@ -58,6 +63,7 @@ def correct_keys_for_device_json(device_list):
             correct_keys = 0
             break
     return correct_keys
+
 
 def correct_keys_for_measurement_json(measurement_list):
     correct_keys = 1
@@ -92,6 +98,7 @@ def correct_keys_for_measurement_json(measurement_list):
             break
     return correct_keys
 
+
 def correct_value_for_device_json(device_list):
     correct_values = 1
     for each_device_dict in device_list:
@@ -117,6 +124,7 @@ def correct_value_for_device_json(device_list):
             correct_values=0
             break
     return correct_values
+
 
 def correct_value_for_measurement_json(measurement_list):
     correct_values = 1
@@ -146,6 +154,7 @@ def correct_value_for_measurement_json(measurement_list):
             correct_values=0
             break
     return correct_values
+
 
 if __name__ == "__main__":
     BASE = "http://127.0.0.1:5000/"
