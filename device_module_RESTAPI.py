@@ -1,4 +1,3 @@
-#sqlalchemy - database
 from flask import Flask # request object can be used inside resource
 from flask_restful import Api, Resource, reqparse, abort, fields, marshal_with
 from flask_sqlalchemy import SQLAlchemy
