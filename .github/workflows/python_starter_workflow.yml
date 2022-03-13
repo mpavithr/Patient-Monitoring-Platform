@@ -43,4 +43,10 @@ jobs:
           flake8 . --count --select=E9,E221,E222,E262,E305,E4,F401,F404,F541,EF63,F7,F82 --show-source --statistics --ignore F821
          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Test with pytest
+        run: |
+         # change the working directory to where pytest is located
+           cd /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/src/device
+         # indicate where pytest is located
+           pytest /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/src/device/test_device_module.py
  
