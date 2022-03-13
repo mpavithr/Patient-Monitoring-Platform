@@ -8,9 +8,6 @@ class TestPhase1(unittest.TestCase):
     def test_checkingEmptyEntryforFile(self):
         result = device_module_unit_tests.checkingEmptyEntryforFile(None)
         self.assertEqual(result,0)
-    def test_checkingEmptyFile(self):
-        result = device_module_unit_tests.checkingEmptyFile("data/empty_json.json")
-        self.assertTrue(result,True)
     def test_correct_keys_for_device_json(self):
         result = device_module_unit_tests.correct_keys_for_device_json("data/incorrect_keys_devices.json")
         self.assertEqual(result,0)
