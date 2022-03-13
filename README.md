@@ -10,9 +10,9 @@ This repository uses python3+.
 
 Make sure to install the requirements:
 
-'''
+```
 python -m pip install requirements
-'''
+```
 
 ### Development
 
