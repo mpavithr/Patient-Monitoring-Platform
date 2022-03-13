@@ -1,0 +1,22 @@
+{
+    "measurements":[
+        {
+            "device_id": "1",
+            "patient_id": 2,
+            "assigner_id": 3,
+            "machineID": 4,
+            "date_assigned": "2022-01-23T03:15:23",
+            "date_returned": "2022-01-25T03:13:53",
+            "measurement": 57
+        },
+        {
+            "device_id": 4,
+            "patient_id": 5,
+            "assigner_id": 1,
+            "machineID": 2,
+            "date_assigned": "2022-02-13T04:15:22",
+            "date_returned": "2022-03-15T03:12:13",
+            "measurement": 110.0
+        }
+    ]
+}
