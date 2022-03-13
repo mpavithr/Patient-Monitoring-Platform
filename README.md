@@ -16,7 +16,7 @@ python -m pip install requirements
 
 ### Development
 
-When working on the health platform, an issue will be opened with the desciption of the task being done. Work will be done in sprints in a different branch with respect to main (Branching strategy is furthur explained in wiki). Sprint tasks have to pass unit testing by sprint deadline. Once thoroughly tested, code goes into main branch which means it is ready for release. Sprint tasks not completed by the sprint deadline are moved to the next sprint. 
+When working on the patient monitoring platform, an issue will be opened with the desciption of the task being done. Work will be done in sprints in a different branch with respect to main (Branching strategy is furthur explained in wiki). Sprint tasks have to pass unit testing by sprint deadline. Once thoroughly tested, code goes into main branch which means it is ready for release. Sprint tasks not completed by the sprint deadline are moved to the next sprint. 
 
 **Branching Strategy** - https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Branching-Strategy
 
