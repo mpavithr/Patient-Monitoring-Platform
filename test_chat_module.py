@@ -15,5 +15,6 @@ class TestPhase1(unittest.TestCase):
         result = chat_module_unit_tests.correct_value_for_chat_json("data/incorrect_values_chats.json")
         self.assertEqual(result,0)
 
+
 if __name__ == '__main__':
     unittest.main()
