@@ -1,0 +1,24 @@
+{
+    "chats":[
+      {
+        "timestamp": "03-13-2022T07:23",
+        "sender_id": 1,
+        "reciever_id": 2,
+        "text": "please take your Temperature.",
+        "attachment_video_url": "www.youtube.com/how-to-take-temp",
+        "attachment_audio_url": "www.spotify.com/music-to-relax",
+        "attachment_image_url": "www.imgur.com/thermometer",
+        "attachment_file_url": "www.how-to-take-temperature.com"
+      },
+      {
+        "timestamp": "02-28-2022T12:56",
+        "sender_id": 2,
+        "reciever_id": 1,
+        "text": "I am feeling feverish, doctor.",
+        "attachment_video_url": "www.youtube.com/i-am-feverish",
+        "attachment_audio_url": "www.spotify.com/fever-sounds",
+        "attachment_image_url": "",
+        "attachment_file_url": ""
+      }
+    ]
+}
