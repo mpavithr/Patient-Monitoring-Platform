@@ -49,4 +49,8 @@ jobs:
            cd /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/src/device
          # indicate where pytest is located
            pytest /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/src/device/test_device_module.py
+         # change the working directory to where pytest is located
+           cd /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/src/chat
+         # indicate where pytest is located
+           pytest /home/runner/work/Patient-Monitoring-Platform/Patient-Monitoring-Platform/src/chat/test_chat_module.py
  
