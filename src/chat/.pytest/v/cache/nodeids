@@ -1,1 +1,6 @@
-
+[
+  "test_chat_module.py::TestPhase1::test_checkingEmptyEntryforFile",
+  "test_chat_module.py::TestPhase1::test_checkingForJSON",
+  "test_chat_module.py::TestPhase1::test_correct_keys_for_chat_json",
+  "test_chat_module.py::TestPhase1::test_correct_value_for_chat_json"
+]
