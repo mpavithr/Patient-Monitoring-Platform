@@ -1,4 +1,5 @@
 import json
+import requests
 
 def checkingForJSON(file):
     jsonFlag = 0
@@ -122,3 +123,50 @@ if __name__ == "__main__":
     if correct_value_for_chat_json(chat_data) == 0:
         print("The chat file you entered has incorrect values. Please enter a valid chat file in json format.")
         exit()
+    for i in range(len(chat_data)):
+        response = requests.post(BASE + "chat/" + str(i), chat_data[i])
+        print(response.json())
+    input()
+    #Trying to update
+    response = requests.put(BASE + "chat/10", {"timestamp":"13-03-2022T08:32", "sender_id":1, "reciever_id":4, "text":"Im okay now!! Feeling much better"})
+    print(response.json())
+    '''
+    for i in range(len(device_data)):
+            response = requests.post(BASE + "device/" + str(i), device_data[i])
+            print(response.json())
+    input()
+    #Trying to update
+    response = requests.put(BASE + "device/3", {"name":"Thermometer","firmware_version":110,"serial_number":2342})
+    print(response.json())
+    input()
+    response = requests.delete(BASE + "device/0")
+    print(response)
+    input()
+    response = requests.get(BASE + "device/6")
+    print(response.json())
+    file = str(input("Enter patient data file in json format:"))
+    jsonFlag = checkingForJSON(file)
+    emptyFlag = checkingEmptyFile(file)
+    if jsonFlag==0 or emptyFlag==0:
+        exit()
+    try:
+        a_file = open(file)
+    except IOError:
+        print ("Could not open file, please close file!")
+        exit()
+    with a_file as f:
+        data = json.load(f)
+    patient_data = data["measurements"]
+    for i in range(len(patient_data)):
+        response = requests.post(BASE + "measurement/" + str(i), patient_data[i])
+        print(response.json())
+    input()
+    response = requests.put(BASE + "measurement/1", {"measurement":112})
+    print(response.json())
+    input()
+    response = requests.delete(BASE + "measurement/1")
+    print(response)
+    input()
+    response = requests.get(BASE + "measurement/0")
+    print(response.json())
+    '''
