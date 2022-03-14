@@ -38,4 +38,4 @@ Click [here](https://github.com/mpavithr/Patient-Monitoring-Platform/wiki/Descri
 
 All implementations should have unit tests written to verify their implementation. Any testing file should have the prefix "test_". This repository uses `pytest` as its test runner. 
 
-As of 13th March 2022, Phase 0, Phase 1, Phase 2, Phase 3 are complete. 
+As of 13th March 2022, Phase 0, Phase 1, Phase 2, Phase 3 are complete and code is deployed to a remote server.
