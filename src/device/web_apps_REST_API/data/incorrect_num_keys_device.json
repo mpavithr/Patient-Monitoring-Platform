@@ -1,0 +1,27 @@
+{
+    "devices":[
+        {
+            "name": "Weighing Scale",
+            "firmware_version": 194.3,
+            "date_of_purchase": "2022-02-21T13:35:43",
+            "serial_number": 9045,
+            "machineID": 4
+        },
+        {
+            "name": "Glucometer",
+            "firmware_version": 1235.3,
+            "date_of_purchase": "2022-01-21T10:35:23",
+            "serial_number": 8945,
+            "mac_address": "734.635.545",
+            "machineID": 5
+        },
+        {
+            "name": "BP Monitor",
+            "firmware_version": 1454.3,
+            "date_of_purchase": "2022-02-31T11:21:23",
+            "serial_number": 4532,
+            "mac_address": "124.342.123",
+            "machineID": 2
+        }
+    ]
+}
