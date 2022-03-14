@@ -112,6 +112,7 @@ class Chat(Resource):
         db.session.commit()
         return '', 204
 
+
 api.add_resource(Chat, "/chat/<int:chatID>")
 
 
